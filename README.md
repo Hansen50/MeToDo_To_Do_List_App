@@ -18,24 +18,76 @@ Sebuah aplikasi simple untuk menyimpan daftar pekerjaan (to do list) yang dibuat
 
 ## Tech Stack
 
-*Bahasa Pemrograman:* Kotlin
+- Android Studio
+- Java JDK
+- Database: SQLite
+- Kotlin
+- Java
+- Real Device (debug)
 
-*Database:* SQLite
-
+## Library Used
+- Kotlin - Bahasa pemrograman resmi dan kelas satu untuk pengembangan Android.
+- Coroutines - Untuk asinkron dan lainnya..
+- Room - Pustaka pemetaan objek SQLite.
+- RecyclerView - Menampilkan kumpulan data besar di UI Anda sambil meminimalkan penggunaan memori.
+- Komponen Material untuk Android - Komponen UI Desain Material yang modular dan dapat disesuaikan untuk Android.
+- ViewBinding - Menghasilkan kelas pengikatan untuk setiap file tata letak XML yang ada dalam modul tersebut dan memungkinkan Anda menulis kode yang berinteraksi dengan tampilan dengan lebih mudah.
+- Widget
+- AlertBox
+- Timepicker
+- Datepicker
 
 
 ## Installation
 
-Install aplikasi pada perangkat Android.
+
+
+Menjalankan aplikasi pada perangkat Android atau emulator.
 
 ```bash
-  1. Download file APK aplikasi pada perangkat
-  2. Install aplikasi pada perangkat
-  3. Buka aplikasi
+  1. Download file atau clone repositori ini
+  2. Ekstrak zip jika mendownload file
+  3. Buka Android studio
+  4. Tunggu build.gradle proses termasuk download file yang diperlukam
+  5. Pilih perangkat
+  6. klik menu run pada header android studio
+  7. Tunggu proses debug
 ```
+
+Membuka projek menggunakan menggunakan terminal
+
+MacOs atau Linux
+```bash
+cd ~/Documents/AndroidStudioProjects/NamaProyek
+```
+Windows
+```bash
+cd C:\Users\NamaPengguna\Documents\AndroidStudioProjects\NamaProyek
+```
+
+## Tampilan UI Aplikasi
+
+Halaman Utama
+https://ibb.co.com/xgPLV0w
+
+Halaman utama ketika ada data task/tugas
+https://ibb.co.com/JzJh4ry
+
+Halaman Create task/tugas
+https://ibb.co.com/ThqmvNw
+
+Halaman Update task/tugas
+https://ibb.co.com/SsC7yVb
+
+Alertbox dialog menghapus salah satu task/tugas
+https://ibb.co.com/XWmFr7x
+
+Alertbox dialog menyelesaikan salah satu task/tugas
+https://ibb.co.com/MpKnhtc
 
     
 ## Cara Menggunakan Aplikasi
+
 
 *Cara membuat daftar task baru:*
 
@@ -75,3 +127,5 @@ Install aplikasi pada perangkat Android.
   2. Tekan Yes pada konfirmasi yang muncul
   3. Task akan ditandai sebagai selesai dan dihapus dari daftar
 ```
+## Video Demo Aplikasi
+https://youtu.be/HVw-H75SjPo
