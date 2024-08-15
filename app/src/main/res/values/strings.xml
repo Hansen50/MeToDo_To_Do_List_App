@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">TASK TO DO Application</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="add_task" />
+    <string name="icon_add">Add new note</string>
 </resources>
