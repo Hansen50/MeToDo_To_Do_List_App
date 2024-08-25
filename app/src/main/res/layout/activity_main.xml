@@ -6,35 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <!-- Header TextView -->
-    <TextView
-        android:id="@+id/header_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Halo!!!"
-        android:textSize="20sp"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        android:background="@color/transparent"
-        android:gravity="start|center_vertical"
-        android:padding="16dp"
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"/>
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- RecyclerView for displaying notes -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_task"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ViewPager2 for swiping between tabs -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/icon_add"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header_text"
-        tools:listitem="@layout/main_adapter" />
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- FloatingActionButton to add new notes -->
+
+
+    <!-- FloatingActionButton to add new tasks -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/icon_add"
         android:layout_width="wrap_content"
@@ -47,22 +46,5 @@
         app:backgroundTint="@color/purple_500"
         android:tint="@color/white"
         app:fabSize="normal" />
-
-    <!-- TextView for displaying "No Task" -->
-    <TextView
-        android:id="@+id/no_data_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No Task"
-        android:layout_margin="16dp"
-        android:gravity="center"
-        android:textColor="@color/Secondary_Text"
-        android:textSize="16sp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/icon_add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,4 +10,5 @@
     <color name="Outline">#9F9F9F</color>
     <color name="Secondary_Text">#919090</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="tab_selected_indicator_color">#FFFFFFFF</color>
 </resources>

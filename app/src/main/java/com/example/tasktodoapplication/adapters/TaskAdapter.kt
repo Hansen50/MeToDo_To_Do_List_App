@@ -1,4 +1,4 @@
-package com.example.tasktodoapplication.adapter
+package com.example.tasktodoapplication.adapters
 
 import android.graphics.Paint
 import android.view.LayoutInflater

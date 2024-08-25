@@ -8,7 +8,7 @@ import androidx.room.Update
 
 @Dao
 interface TaskDao {
-// karena akan menggunakan courotine(async) maka tambahkan suspend
+    // karena akan menggunakan courotine(async) maka tambahkan suspend
     @Insert
     suspend fun addTask(task: Task)
 
@@ -18,12 +18,15 @@ interface TaskDao {
     @Delete
     suspend fun deleteTask(task: Task)
 
-    @Query("SELECT * FROM task")
-    suspend fun getTasks(): List<Task>
+    @Query("SELECT * FROM task WHERE isDone = 0")
+    fun getTasks(): List<Task>
 
     @Query("SELECT * FROM task WHERE id=:task_id")
     suspend fun getTask(task_id: Int): List<Task>
 
     @Query("UPDATE task SET isDone = :isDone WHERE id = :id")
     suspend fun markAsDone(id: Int, isDone: Boolean)
+
+    @Query("SELECT * FROM task WHERE isDone = 1")
+    fun getCompletedTasks(): List<Task>
 }
