@@ -36,6 +36,8 @@ Sebuah aplikasi simple untuk menyimpan daftar pekerjaan (to do list) yang dibuat
 - AlertBox
 - Timepicker
 - Datepicker
+- Tab Layout
+- PageView
 
 
 ## Installation
