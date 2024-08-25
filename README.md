@@ -7,7 +7,6 @@
 
 Sebuah aplikasi simple untuk menyimpan daftar pekerjaan (to do list) yang dibuat dengan Kotlin dan database SQLite untuk OS Android.
 
-
 ## Features
 
 - Menambahkan task ke daftar dengan detailnya (Title, Deadline Date & Time)
@@ -67,27 +66,20 @@ Windows
 cd C:\Users\NamaPengguna\Documents\AndroidStudioProjects\NamaProyek
 ```
 
-## Tampilan UI Aplikasi
+## Halaman Task On Progress
+<img src="https://github.com/user-attachments/assets/6fa48a11-d572-43b9-af96-3f4143336d6a" alt="Deskripsi Gambar" width="300" height="500">
 
-Halaman Utama
-https://ibb.co.com/xgPLV0w
 
-Halaman utama ketika ada data task/tugas
-https://ibb.co.com/JzJh4ry
+## Halaman Create task/tugas
+<img src="https://github.com/user-attachments/assets/13cd6e8b-824f-4507-9a55-65368ccfd1f2" alt="Deskripsi Gambar" width="300" height="500">
 
-Halaman Create task/tugas
-https://ibb.co.com/ThqmvNw
+## Halaman Update task/tugas
+<img src="https://github.com/user-attachments/assets/df978e93-c79d-4c5d-a749-c6ae9e7f79e3" alt="Deskripsi Gambar" width="300" height="500">
 
-Halaman Update task/tugas
-https://ibb.co.com/SsC7yVb
 
-Alertbox dialog menghapus salah satu task/tugas
-https://ibb.co.com/XWmFr7x
+## Halaman Task Done
+<img src="https://github.com/user-attachments/assets/c2717cc5-244c-4585-b743-e979be8e886f" alt="Deskripsi Gambar" width="300" height="500">
 
-Alertbox dialog menyelesaikan salah satu task/tugas
-https://ibb.co.com/MpKnhtc
-
-    
 ## Cara Menggunakan Aplikasi
 
 
@@ -127,7 +119,7 @@ https://ibb.co.com/MpKnhtc
 ```bash
   1. Tekan tombol Mark as Done pada task yang ingin ditandai
   2. Tekan Yes pada konfirmasi yang muncul
-  3. Task akan ditandai sebagai selesai dan dihapus dari daftar
+  3. Task akan ditandai sebagai selesai dan dihapus dari tab On Progress
 ```
 ## Video Demo Aplikasi
 https://youtu.be/HVw-H75SjPo
